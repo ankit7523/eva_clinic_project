@@ -1,0 +1,242 @@
+/* =====================================================
+   VAANYA CLINIC – ABOUT PAGE (MATCH HOME STYLE)
+   File: /css/about.css
+===================================================== */
+
+/* ---------- BASE ---------- */
+.about-page {
+  font-family: 'Poppins', sans-serif;
+  background: #ffffff;
+  color: #222;
+  line-height: 1.7;
+}
+
+.about-page p {
+  color: #555;
+  font-size: 15px;
+}
+
+/* ---------- COMMON ---------- */
+.section {
+  padding: 27px 0;
+}
+
+.section.alt {
+  background: #f9fafb;
+}
+
+.container {
+  max-width: 1200px;
+  margin: auto;
+  padding: 0 20px;
+}
+
+.container.narrow {
+  max-width: 900px;
+  
+}
+
+/* =====================================================
+   HERO (CLICK ISSUE FIXED)
+===================================================== */
+.about-page .hero {
+  height: 75vh;
+  background: url("/img/banner.jpg") center/cover no-repeat;
+  position: relative;
+  display: flex;
+  align-items: center;
+  overflow: hidden;
+}
+
+/* 🔥 Overlay – click ko block nahi karega */
+.about-page .hero::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.45);
+  pointer-events: none; /* ✅ MOST IMPORTANT */
+}
+
+/* 🔥 Hero content overlay ke upar */
+.about-page .hero .container {
+  position: relative;
+  z-index: 2;
+  color: #ffffff;
+}
+
+.about-page .hero h1 {
+  font-size: 42px;
+  font-weight: 700;
+  margin-bottom: 12px;
+}
+
+.about-page .hero .lead {
+  max-width: 900px;
+  font-size: 16px;
+  color: #f1f1f1;
+}
+
+/* =====================================================
+   BUTTONS (CLICK SAFE)
+===================================================== */
+.hero-cta,
+.cta-row {
+  margin-top: 20px;
+  display: flex;
+  gap: 16px;
+  flex-wrap: wrap;
+  position: relative;
+  z-index: 3; /* ✅ CTA always on top */
+}
+
+.btn {
+  display: inline-flex;
+    align-items: center;
+    justify-content: center;
+
+    width: 260px;
+    height: 72px;
+
+    background: #d88d00;
+    color: #fff;
+
+    text-decoration: none;
+    font-size: 20px;
+    font-weight: 600;
+    font-family: "Poppins", sans-serif;
+
+    border-radius: 50px;
+    border: none;
+    cursor: pointer;
+
+    box-shadow: 0 12px 25px rgba(0,0,0,.18);
+    transition: all .35s ease;
+}
+
+/* primary */
+.btn-primary {
+  background: #0f766e;
+  color: #ffffff;
+}
+
+.btn-primary:hover {
+  background: #134e4a;
+}
+
+/* outline */
+.btn-outline {
+  background: #ffffff;
+  color: #0f766e;
+  border: 2px solid #0f766e;
+}
+
+.btn-outline:hover {
+  background: #0f766e;
+  color: #ffffff;
+}
+
+/* =====================================================
+   SECTION TITLES
+===================================================== */
+.section-title {
+  text-align: center;
+  font-size: 34px;
+  font-weight: 600;
+  margin-bottom: 30px;
+  color: #222;
+}
+
+/* =====================================================
+   GRIDS
+===================================================== */
+.grid-2 {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 24px;
+}
+
+.grid-3 {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 24px;
+}
+
+/* =====================================================
+   CARDS
+===================================================== */
+.card, .mini-card, .feature {
+    background: #ffffff;
+    border: 2px solid black;
+    border-radius: 14px;
+    box-shadow: 0 4px 14px rgba(0, 0, 0, 0.08);
+    padding: 19px;
+}
+
+.card h3,
+.mini-card h3 {
+  font-size: 22px;
+  margin-bottom: 10px;
+  color: #222;
+}
+
+.card p,
+.mini-card p,
+.feature p {
+  color: #555;
+}
+
+/* =====================================================
+   TECHNOLOGY PILL
+===================================================== */
+.pill {
+  display: inline-block;
+  margin-bottom: 10px;
+  padding: 6px 14px;
+  border-radius: 20px;
+  font-size: 13px;
+  font-weight: 600;
+  color: #0f766e;
+  background: #ccfbf1;
+}
+
+/* =====================================================
+   CHECKLIST
+===================================================== */
+.checklist {
+  max-width: 900px;
+  margin: 20px auto 0;
+  list-style: none;
+  padding: 0;
+}
+
+.checklist li {
+  position: relative;
+  padding-left: 30px;
+  margin-bottom: 10px;
+  color: #555;
+}
+
+.checklist li::before {
+  content: "✔";
+  position: absolute;
+  left: 0;
+  top: 0;
+  color: #0f766e;
+  font-weight: 700;
+}
+
+
+
+/* =====================================================
+   RESPONSIVE
+===================================================== */
+@media (max-width: 992px) {
+  .grid-2,
+  .grid-3 {
+    grid-template-columns: 1fr;
+  }
+
+  .about-page .hero h1 {
+    font-size: 32px;
+  }
+}

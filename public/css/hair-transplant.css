@@ -1,0 +1,330 @@
+/* =========================================================
+   VAANYA CLINIC — HAIR TRANSPLANT PAGE STYLES (FINAL SAFE)
+   ✔ Header safe
+   ✔ No logo / title shift
+   ✔ Same design
+========================================================= */
+
+/* ---------- Base Reset (PAGE SCOPED) ---------- */
+.hair-page * {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.hair-page {
+  font-family: 'Poppins', system-ui, -apple-system, Segoe UI, Roboto, Arial, sans-serif;
+  background: #ffffff;
+  color: #000000;
+  line-height: 1.7;
+}
+
+/* ---------- Common ---------- */
+.hair-page img {
+  max-width: 100%;
+  display: block;
+}
+
+.hair-page .container {
+  max-width: 1200px;
+  margin: auto;
+  padding: 0 16px;
+}
+
+.hair-page section {
+  padding: 64px 0;
+}
+
+.hair-page p {
+  margin: 0 0 14px;
+  font-size: 15.5px;
+  color: #000000;
+}
+
+.hair-page h1,
+.hair-page h2,
+.hair-page h3 {
+  margin: 0 0 10px;
+  line-height: 1.25;
+  font-weight: 600;
+  color: #000000;
+}
+
+/* ---------- Buttons ---------- */
+.hair-page .btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 10px 22px;
+  border-radius: 999px;
+  font-weight: 600;
+  font-size: 15px;
+  text-decoration: none;
+  cursor: pointer;
+  transition: .3s ease;
+}
+
+.hair-page .btn-light {
+  background: #000000;
+  color: #ffffff;
+}
+
+.hair-page .btn-light:hover {
+  background: #111111;
+}
+
+/* =========================================================
+   HERO COLLAGE
+========================================================= */
+.hair-page .hero-collage {
+  background: #ffffff;
+  padding: 32px 0 24px;
+  overflow: hidden;
+}
+
+.hair-page .hero-collage .collage {
+  display: grid;
+  grid-template-rows: repeat(2, 1fr);
+  height: 380px;
+  margin-bottom: 40px;
+}
+
+.hair-page .hero-collage .row {
+  display: flex;
+  width: max-content;
+  gap: 16px;
+  animation: scrollRow 60s linear infinite;
+}
+
+.hair-page .hero-collage .row:nth-child(2) {
+  animation-direction: reverse;
+}
+
+.hair-page .hero-collage .row img {
+  width: 360px;
+  height: 210px;
+  object-fit: cover;
+  flex-shrink: 0;
+  background: #ffffff;
+  border: 2px solid #000000;
+  padding: 6px;
+  border-radius: 14px;
+  box-shadow: 0 14px 30px rgba(0,0,0,0.18);
+  transition: transform .35s ease, filter .35s ease;
+}
+
+.hair-page .hero-collage .row img:hover {
+  transform: scale(1.06);
+  filter: brightness(1.05) contrast(1.08);
+}
+
+@keyframes scrollRow {
+  from { transform: translateX(-50%); }
+  to   { transform: translateX(0); }
+}
+
+.hair-page .hero-collage:hover .row {
+  animation-play-state: paused;
+}
+
+/* ---------- Hero Text ---------- */
+.hair-page .hero-text {
+  text-align: center;
+}
+
+.hair-page .hero-text h1 {
+  font-size: clamp(24px, 4.6vw, 44px);
+  max-width: 980px;
+  margin: 0 auto 10px;
+}
+
+.hair-page .hero-text p {
+  max-width: 880px;
+  margin: auto;
+  font-size: 16px;
+}
+
+/* =========================================================
+   REASONS
+========================================================= */
+.hair-page .reasons {
+  display: grid;
+  gap: 18px;
+}
+
+.hair-page .reason {
+  display: grid;
+  grid-template-columns: 130px 1fr;
+  gap: 18px;
+  background: #ffffff;
+  padding: 16px;
+  border-radius: 16px;
+  border: 2px solid #000000;
+  box-shadow: 0 12px 28px rgba(0,0,0,0.12);
+}
+
+.hair-page .reason img {
+  width: 60px;
+  height: 60px;
+  object-fit: cover;
+  background: #ffffff;
+  border: 2px solid #000000;
+  padding: 6px;
+  border-radius: 14px;
+}
+
+/* =========================================================
+   CONDITIONS
+========================================================= */
+.hair-page .conditions {
+  display: grid;
+  grid-template-columns: 1fr 1.2fr;
+  gap: 24px;
+  align-items: center;
+}
+
+.hair-page .cond-left img {
+  background: #ffffff;
+  border: 2px solid #000000;
+  padding: 6px;
+  border-radius: 16px;
+  box-shadow: 0 12px 28px rgba(0,0,0,0.12);
+}
+
+.hair-page .cond-right span {
+  font-weight: 700;
+}
+
+.hair-page .cond-right ul {
+  list-style: none;
+  padding: 0;
+  margin: 10px 0 0;
+}
+
+.hair-page .cond-right li {
+  padding-left: 28px;
+  position: relative;
+}
+
+.hair-page .cond-right li::before {
+  content: "✔";
+  position: absolute;
+  left: 0;
+  top: 0;
+  font-weight: 700;
+}
+
+/* =========================================================
+   COST BANNER
+========================================================= */
+.hair-page .cost-banner {
+  background: #ffffff;
+}
+
+.hair-page .cost-wrap {
+  display: grid;
+  grid-template-columns: 380px 1fr;
+  gap: 20px;
+  align-items: center;
+  padding: 20px;
+  border-radius: 20px;
+  border: 2px solid #000000;
+  box-shadow: 0 20px 40px rgba(0,0,0,0.15);
+}
+
+.hair-page .cost-img img {
+  filter: brightness(0) saturate(100%);
+}
+
+/* =========================================================
+   FUE / DENSE / TECHNIQUE
+========================================================= */
+.hair-page .fue-detail,
+.hair-page .dense,
+.hair-page .technique {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 24px;
+  align-items: center;
+}
+
+.hair-page .fue-detail img,
+.hair-page .dense img,
+.hair-page .technique img {
+  background: #ffffff;
+  border: 2px solid #000000;
+  padding: 6px;
+  border-radius: 16px;
+  box-shadow: 0 12px 28px rgba(0,0,0,0.12);
+}
+
+/* =========================================================
+   BENEFITS
+========================================================= */
+.hair-page .benefits h2 {
+  text-align: center;
+  font-size: clamp(22px, 3.2vw, 32px);
+}
+
+.hair-page .benefit-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 18px;
+}
+
+.hair-page .benefit {
+  background: #ffffff;
+  border-radius: 16px;
+  padding: 16px;
+  border: 2px solid #000000;
+  box-shadow: 0 12px 28px rgba(0,0,0,0.12);
+  text-align: center;
+}
+
+.hair-page .benefit img {
+  width: 64px;
+  height: 64px;
+  background: #ada1a1;
+  border: 2px solid #000000;
+  padding: 6px;
+  border-radius: 12px;
+  margin: auto auto 8px;
+}
+
+.hair-page .benefit p {
+  font-weight: 600;
+}
+
+/* =========================================================
+   RESPONSIVE
+========================================================= */
+@media (max-width: 980px) {
+  .hair-page .conditions,
+  .hair-page .fue-detail,
+  .hair-page .dense,
+  .hair-page .technique,
+  .hair-page .cost-wrap {
+    grid-template-columns: 1fr;
+  }
+
+  .hair-page .benefit-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 520px) {
+  .hair-page .hero-collage .row {
+    gap: 12px;
+    animation-duration: 70s;
+  }
+
+  .hair-page .hero-collage .row img {
+    width: 260px;
+    height: 160px;
+    padding: 5px;
+  }
+
+  .hair-page .benefit-grid {
+    grid-template-columns: 1fr;
+  }
+}

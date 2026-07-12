@@ -1,0 +1,190 @@
+/* ===============================
+   VAANYA CLINIC — RESULTS STYLES
+   COMPACT + BALANCED VERSION
+   File: /css/results.css
+   =============================== */
+
+/* ---------------- ROOT COLORS ---------------- */
+:root {
+  --bg: #ffffff;
+  --card: #ffffff;
+  --text: #101828;
+  --muted: #667085;
+  --green-light: #e8f5e9;
+  --green-mid: #c8e6c9;
+  --green-dark: #0f5132;
+  --brand: #16a34a;
+  --shadow: 0 10px 26px rgba(16, 24, 40, 0.08);
+  --radius-lg: 20px;
+  --radius-sm: 14px;
+}
+
+/* ---------------- GLOBAL ---------------- */
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Poppins', system-ui, -apple-system, Segoe UI, Roboto, Arial, sans-serif;
+  background: var(--bg);
+  color: var(--text);
+}
+
+/* ---------------- SECTION ---------------- */
+.htp-results {
+  padding: clamp(36px, 4vw, 64px) 16px;
+  background: #ffffff;
+}
+
+.htp-results-container {
+  max-width: 1250px;
+  margin: auto;
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 22px; /* 👈 overall gap thoda kam */
+}
+
+/* ---------------- CARD ---------------- */
+.result-card {
+  border: 2px solid black;
+  background: var(--card);
+  border-radius: var(--radius-lg);
+  padding: 9px; /* 👈 compact */
+  box-shadow: var(--shadow);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.result-card:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 16px 36px rgba(16, 24, 40, 0.12);
+}
+
+/* ---------------- TITLE ---------------- */
+.result-card h3 {
+  text-align: center;
+  font-size: 17px;
+  font-weight: 600;
+  margin-bottom: 12px; /* 👈 gap kam */
+  color: var(--green-dark);
+}
+
+/* ---------------- IMAGES ROW ---------------- */
+.result-images {
+  display: grid;
+  grid-template-columns: 1fr auto 1fr;
+  align-items: center;
+  gap: 10px; /* 👈 before–after gap kam */
+}
+
+/* ---------------- IMAGE BLOCK ---------------- */
+.result-img {
+  position: relative;
+  height: 300px; /* 👈 HEIGHT KAM (main fix) */
+  background: linear-gradient(135deg, var(--green-light), var(--green-mid));
+  padding: 0px; /* 👈 frame thin */
+  border-radius: var(--radius-sm);
+  box-shadow: 0 6px 18px rgba(22, 163, 74, 0.18);
+  overflow: hidden;
+}
+
+/* ---------------- IMAGE FULL FILL ---------------- */
+.result-img img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 10px;
+  display: block;
+  background: #ffffff;
+}
+
+/* ---------------- IMAGE LABEL ---------------- */
+.result-img p {
+  position: absolute;
+  left: 12px;
+  bottom: 12px;
+  margin: 0;
+  padding: 5px 12px;
+  font-size: 11px;
+  font-weight: 600;
+  color: #ffffff;
+  background: linear-gradient(135deg, #22c55e, #15803d);
+  border-radius: 999px;
+  letter-spacing: 0.4px;
+}
+
+/* ---------------- ARROW ---------------- */
+.result-arrow {
+  width: 34px;   /* 👈 thoda chhota */
+  height: 34px;
+  border-radius: 50%;
+  background: linear-gradient(135deg, #dcfce7, #bbf7d0);
+  border: 1px solid #86efac;
+  position: relative;
+  flex-shrink: 0;
+}
+
+.result-arrow::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  margin: auto;
+  width: 38%;
+  height: 38%;
+  border-right: 3px solid #166534;
+  border-bottom: 3px solid #166534;
+  transform: rotate(-45deg);
+}
+
+/* ---------------- DURATION ---------------- */
+.result-duration {
+  text-align: center;
+  margin-top: 10px; /* 👈 compact */
+  font-size: 13px;
+  font-weight: 500;
+  color: black
+}
+
+.result-duration span {
+  display: block;
+  margin-top: 3px;
+  font-size: 12px;
+  color: black
+}
+.main-result-title {
+  grid-column: 1 / -1;   /* 👈 FULL WIDTH across grid */
+  text-align: center;
+  font-size: 30px;
+  font-weight: 600;
+  margin-bottom: 40px;
+  color: #000;
+}
+
+
+/* ---------------- RESPONSIVE ---------------- */
+@media (min-width: 640px) {
+  .htp-results-container {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (min-width: 1024px) {
+  .htp-results-container {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+/* ---------------- MOBILE OPTIMIZATION ---------------- */
+@media (max-width: 480px) {
+  .result-img {
+    height: 260px; /* 👈 mobile pe aur balanced */
+  }
+}
+
+/* ---------------- REDUCED MOTION ---------------- */
+@media (prefers-reduced-motion: reduce) {
+  .result-card {
+    transition: none;
+  }
+}

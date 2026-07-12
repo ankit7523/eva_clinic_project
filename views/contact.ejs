@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact Us - Vaanya Clinic</title>
+
+  <!-- Google Font -->
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap" rel="stylesheet">
+
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
+  <!-- Page CSS -->
+  <link rel="stylesheet" href="/css/header.css">
+  <link rel="stylesheet" href="/css/contact.css">
+  <link rel="stylesheet" href="/css/footer.css">
+  
+
+</head>
+
+<body>
+
+  <!-- HEADER -->
+  <%- include('partials/header') %>
+
+    <!-- CONTACT SECTION -->
+    <section class="contact section">
+      <div class="container">
+
+        <h2 class="section-title">Contact / Book Appointment</h2>
+
+        <div class="contact-grid">
+
+          <!-- LEFT : WHATSAPP FORM -->
+          <form class="contact-form" id="whatsappForm">
+
+            <input type="text" id="name" placeholder="Full Name" required>
+
+            <input type="tel" id="mobile" placeholder="Mobile Number" required>
+
+            <input type="text" id="place" placeholder="City / Place" required>
+
+            <select id="problem" required>
+              <option value="">Select Hair Problem</option>
+
+              <option>Hair Fall (Excessive Shedding)</option>
+              <option>Male Pattern Baldness</option>
+              <option>Female Pattern Hair Loss</option>
+              <option>Hair Thinning</option>
+              <option>Receding Hairline</option>
+              <option>Crown Baldness</option>
+              <option>Patchy Hair Loss (Alopecia Areata)</option>
+              <option>Diffuse Hair Loss</option>
+
+              <option>Dandruff / Scalp Flakes</option>
+              <option>Itchy Scalp</option>
+              <option>Oily Scalp</option>
+              <option>Dry Scalp</option>
+              <option>Scalp Infection</option>
+
+              <option>Hair Breakage</option>
+              <option>Weak & Thin Hair</option>
+              <option>Slow Hair Growth</option>
+
+              <option>Post COVID Hair Loss</option>
+              <option>Stress Related Hair Fall</option>
+              <option>Hormonal Hair Loss</option>
+
+              <option>Beard Hair Patch</option>
+              <option>Eyebrow Hair Loss</option>
+
+              <option>Other Hair Problem</option>
+            </select>
+
+            <textarea id="details" rows="4" placeholder="Describe your hair problem"></textarea>
+
+            <button type="submit" class="whatsapp-btn">
+              <i class="fa-brands fa-whatsapp"></i> Book via WhatsApp
+            </button>
+
+            <p id="successMessage" class="success-message">
+              ✅ Message sent successfully. We will contact you soon.
+            </p>
+
+
+          </form>
+
+          <!-- RIGHT : DETAILS -->
+          <aside class="contact-details">
+            <h3>EVA CLINIC — Best Hair Transplant Clinic in Lucknow</h3>
+
+            <div class="contact-row">📞 <a href="tel:+919696438436">+91 96964 38436</a></div>
+            <div class="contact-row">💬 <a href="https://wa.me/919696438436" target="_blank">WhatsApp Chat</a></div>
+            <div class="contact-row">✉️ evacliniclko@gmail.com</div>
+
+
+            <div class="contact-row">
+
+              <a href="https://maps.app.goo.gl/QjeSszqZPogaQAVW9" target="_blank" class="location-link"
+                aria-label="View clinic location on Google Maps">
+
+                <i class="fa-solid fa-location-dot"></i>
+                <span>View Location</span>
+              </a>
+              <address>
+                Plot No.178, Ground Floor, Beam Square,<br>
+                Near Honda Envision, Tedhi Puliya,<br>
+                Adil Nagar, Lucknow, Uttar Pradesh 226022
+              </address>
+            </div>
+          </aside>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- FOOTER -->
+    <%- include('partials/footer') %>
+
+      <!-- Page JS -->
+      <script src="/js/contact.js"></script>
+
+</body>
+
+</html>

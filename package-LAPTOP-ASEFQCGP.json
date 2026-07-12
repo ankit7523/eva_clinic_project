@@ -1,0 +1,42 @@
+{
+  "name": "vaanya_clinic_project",
+  "version": "1.0.0",
+  "description": "for Website for Vaanya Clinic — provides information about services, doctors, and appointments.",
+  "main": "index.js",
+  "scripts": {
+    "test": "mocha"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ankit7523/vaanya_clinic_project.git"
+  },
+  "keywords": [
+    "keywords:",
+    "clinic",
+    "salon",
+    "beauty",
+    "aesthetic",
+    "healthcare",
+    "nodejs",
+    "express",
+    "website"
+  ],
+  "author": "Ankit Singh",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ankit7523/vaanya_clinic_project/issues"
+  },
+  "homepage": "https://github.com/ankit7523/vaanya_clinic_project#readme",
+  "dependencies": {
+    "body-parser": "^2.2.0",
+    "dotenv": "^17.2.3",
+    "ejs": "^3.1.10",
+    "express": "^5.1.0",
+    "express-validator": "^7.3.0",
+    "mongoose": "^9.6.1",
+    "nodemailer": "^7.0.10"
+  },
+  "devDependencies": {
+    "nodemon": "^3.1.10"
+  }
+}

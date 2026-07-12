@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>
+    <%= title %> | Vaanya Clinic
+  </title>
+
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap" rel="stylesheet">
+
+  <!-- FONT AWESOME (MUST) -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
+
+
+  <link rel="stylesheet" href="/css/header.css">
+  <link rel="stylesheet" href="/css/about.css">
+  <link rel="stylesheet" href="/css/footer.css">
+</head>
+
+<body>
+
+  <!-- ✅ Header Include -->
+  <%- include('partials/header') %>
+
+    <!-- ✅ About Page Main Content -->
+    <main class="about-page">
+      <!-- Hero / Intro -->
+      <section class="hero">
+        <div class="container">
+          <h1>EVA CLINIC – Advanced Hair Transplant & Aesthetic Care in Lucknow</h1>
+          <p class="lead">
+            At EVA CLINIC, we specialize in advanced hair transplant and aesthetic treatments—
+            delivering natural, long-lasting, confidence-boosting results with precision and care.
+          </p>
+          <div class="hero-cta">
+
+            <a href="/contact" class="btn btn-outline">Talk to an Expert</a>
+          </div>
+        </div>
+      </section>
+
+      <!-- Overview -->
+      <section class="section">
+        <div class="container narrow">
+          <p>
+            Our expert team uses innovative techniques and state-of-the-art technology to ensure every
+            procedure is safe, effective, and tailored to your unique needs. We believe everyone deserves to
+            feel confident and comfortable in their own skin. From your first consultation to complete
+            recovery, we’re with you every step of the way—ensuring comfort, transparency, and unmatched results.
+            Restoring your hair means restoring your confidence—and we make that journey seamless, safe, and successful.
+          </p>
+        </div>
+      </section>
+
+      <!-- Expertise -->
+      <section class="section">
+        <div class="container">
+          <h2 class="section-title">Our Expertise</h2>
+          <div class="grid-2">
+            <div class="card">
+              <h3>Skilled Surgeons & Specialists</h3>
+              <p>
+                Our team is trained in the latest hair transplant technologies and aesthetic solutions.
+                With years of experience and global certifications, we deliver natural results while
+                prioritizing your safety and comfort.
+              </p>
+            </div>
+            <div class="card">
+              <h3>Relentless Focus on Results</h3>
+              <p>
+                Continuous learning, peer review, and adoption of best practices keep us at the leading edge.
+                You get realistic hairlines, consistent density, and outcomes that look and feel natural.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Technology -->
+      <section class="section alt">
+        <div class="container">
+          <h2 class="section-title">Cutting-Edge Technology</h2>
+          <div class="grid-3">
+            <div class="feature">
+              <span class="pill">FUE</span>
+              <p>Minimally invasive extraction with high graft survival and quick recovery.</p>
+            </div>
+            <div class="feature">
+              <span class="pill">FUT</span>
+              <p>Strategic strip harvesting for greater graft yield when indicated.</p>
+            </div>
+            <div class="feature">
+              <span class="pill">Imaging & Mapping</span>
+              <p>Advanced planning tools ensure precision placement and natural direction.</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Client-Centered Care -->
+      <section class="section">
+        <div class="container">
+          <h2 class="section-title">Personalized, Client-Centered Care</h2>
+          <div class="grid-2">
+            <div class="card">
+              <h3>Tailored Treatment Plans</h3>
+              <p>
+                We listen to your goals and design a plan aligned with your lifestyle and expectations—no
+                one-size-fits-all.
+              </p>
+            </div>
+            <div class="card">
+              <h3>Guidance at Every Step</h3>
+              <p>
+                From pre-procedure counseling to post-care follow-ups, our team supports you throughout your journey.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Results -->
+      <section class="section alt">
+        <div class="container">
+          <h2 class="section-title">Proven, Natural Results</h2>
+          <p class="narrow">
+            Explore real patient transformations with natural hairlines, dense growth, and renewed confidence.
+            Read testimonials from clients who regained not just hair—but happiness.
+          </p>
+          <div class="cta-row">
+            <a href="/results" class="btn btn-primary">See Before & After</a>
+            <a href="/videos" class="btn btn-outline">Watch Patient Stories</a>
+          </div>
+        </div>
+      </section>
+
+      <!-- Quality & Safety -->
+      <section class="section">
+        <div class="container">
+          <h2 class="section-title">Commitment to Quality & Safety</h2>
+          <ul class="checklist">
+            <li>International-grade sterilization and hygiene protocols.</li>
+            <li>Experienced medical team with strict intra-operative checks.</li>
+            <li>Transparent communication and evidence-based care.</li>
+          </ul>
+        </div>
+      </section>
+
+      <!-- Mission & Vision -->
+      <section class="section alt">
+        <div class="container">
+          <h2 class="section-title">Our Mission & Vision</h2>
+          <p class="narrow">
+            Our mission is to restore confidence and well-being with advanced hair restoration and aesthetic care.
+            Our vision is to be Delhi’s most trusted name—known for innovation, compassion, and extraordinary results.
+          </p>
+        </div>
+      </section>
+
+      <!-- Why Choose -->
+      <section class="section">
+        <div class="container">
+          <h2 class="section-title">Why Choose EVA CLINIC?</h2>
+          <div class="grid-3">
+            <div class="mini-card">
+              <h3>Expertise & Experience</h3>
+              <p>Board-certified doctors and trained specialists ensure natural, lasting outcomes.</p>
+            </div>
+            <div class="mini-card">
+              <h3>Advanced Technology</h3>
+              <p>World-class equipment (FUE, FUT) for maximum graft survival and realistic density.</p>
+            </div>
+            <div class="mini-card">
+              <h3>Comprehensive Aftercare</h3>
+              <p>Personalized post-procedure plans for smooth recovery and long-term success.</p>
+            </div>
+            <div class="mini-card">
+              <h3>Affordable Excellence</h3>
+              <p>Premium quality at competitive pricing—transparent and accessible.</p>
+            </div>
+            <div class="mini-card">
+              <h3>Trusted Reputation</h3>
+              <p>Thousands of happy clients and genuine testimonials across Delhi.</p>
+            </div>
+          </div>
+          <div class="cta-row">
+            <a href="/contact" class="btn btn-primary">Start Your Journey</a>
+            <!-- </div> -->
+          </div>
+      </section>
+    </main>
+
+    <!-- ✅ Footer Include -->
+    <%- include('partials/footer') %>
+
+</body>
+
+</html>

@@ -1,0 +1,630 @@
+/* =====================================================
+   VAANYA CLINIC – BELLEZA STYLE CLEAN CSS
+   File: /css/style.css
+===================================================== */
+
+/* ---------- RESET ---------- */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* HOME hero spacing fix */
+.hero {
+  margin-top: 0;
+  padding-top: 0;
+}
+
+body {
+  font-family: 'Poppins', sans-serif;
+  background: #fbfffd;
+  color: #14201f;
+  line-height: 1.7;
+}
+
+img {
+  max-width: 100%;
+  display: block;
+}
+
+p {
+  color: #555;
+  font-size: 15px;
+}
+
+/* ---------- COMMON ---------- */
+main section {
+  padding: 80px 0;
+}
+
+/* =====================================================
+   HERO SECTION
+===================================================== */
+.home-page .hero {
+  height: 87vh;
+  background: url("/img/banner.jpg") center/cover no-repeat;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.home-page .hero h4 {
+  font-size: 42px;
+}
+
+.home-page .hero h1 {
+  font-size: 58px;
+  line-height: 1.2;
+}
+
+.hero::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: rgba(0, 0, 0, .45);
+}
+
+.hero-content {
+  position: relative;
+  text-align: center;
+  color: white;
+}
+
+/* =====================================================
+   RATINGS
+===================================================== */
+.ratings {
+  max-width: 1200px;
+  margin: 30px auto 0;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 20px;
+  padding: 0 20px;
+}
+
+.rating-box {
+  background: #fff;
+  padding: 22px;
+  border-radius: 12px;
+  text-align: center;
+  box-shadow: 0 4px 14px rgba(0, 0, 0, .08);
+}
+
+.rating-box .score {
+  font-size: 26px;
+  font-weight: 600;
+  color: #0f766e;
+}
+
+.rating-box p {
+  color: #333;
+}
+
+.rating-box .stars {
+  color: #fbbf24;
+}
+
+/* =====================================================
+   SPECIAL FEATURE
+===================================================== */
+.special-feature {
+  background: #f4fffb;
+}
+
+.special-feature h2 {
+  text-align: center;
+  font-size: 34px;
+  margin-bottom: 40px;
+}
+
+.feature-grid {
+  max-width: 1200px;
+  margin: auto;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 24px;
+  padding: 0 20px;
+}
+
+.feature-box {
+  background: #fff;
+  padding: 30px;
+  border-radius: 14px;
+  text-align: center;
+  box-shadow: 0 3px 12px rgba(0, 0, 0, .07);
+}
+
+.feature-box img {
+  width: 48px;
+  margin: 0 auto 12px;
+}
+
+.feature-box h3 {
+  font-size: 28px;
+  color: #0f766e;
+  font-weight: 600;
+}
+
+.feature-box p {
+  color: #333;
+  font-weight: 500;
+}
+
+/* =====================================================
+   HAIR TRANSPLANT INFO
+===================================================== */
+.hair-transplant-info h2 {
+  text-align: center;
+  font-size: 36px;
+  margin-bottom: 18px;
+}
+
+.hair-transplant-info h2 span {
+  color: #0f766e;
+}
+
+.intro-text,
+.bottom-text {
+  max-width: 900px;
+  margin: 12px auto;
+  text-align: center;
+}
+
+/* RESULTS */
+.results-gallery {
+  max-width: 1200px;
+  margin: 40px auto;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 18px;
+  padding: 0 20px;
+}
+
+.result-card {
+  height: 240px;
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 3px 12px rgba(0, 0, 0, .1);
+}
+
+.result-card img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+/* =====================================================
+   VIDEO SECTION
+===================================================== */
+.videos {
+  max-width: 1200px;
+  margin: auto;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 24px;
+  padding: 0 20px;
+}
+
+.video-box {
+  position: relative;
+  border-radius: 14px;
+  overflow: hidden;
+  box-shadow: 0 3px 12px rgba(0, 0, 0, .1);
+}
+
+.play-btn {
+  position: absolute;
+  inset: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.play-btn img {
+  width: 56px;
+}
+
+.video-title {
+  position: absolute;
+  bottom: 12px;
+  left: 12px;
+  right: 12px;
+  background: rgba(0, 0, 0, .6);
+  color: #fff;
+  padding: 10px;
+  border-radius: 10px;
+}
+
+/* =====================================================
+   CLINIC IMAGES
+===================================================== */
+.clinic-images {
+  background: white;
+  height: 440px;
+}
+
+.clinic-images h2 {
+  text-align: center;
+  color: #090909;
+  font-size: 56px;
+  margin-bottom: 24px;
+  margin-top: -55px;
+}
+
+.gallery {
+  max-width: 1200px;
+  margin: auto;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 16px;
+  padding: 0 20px;
+}
+
+.gallery img {
+  height: 210px;
+  border-radius: 12px;
+  object-fit: cover;
+}
+
+/* =====================================================
+   TEAM SECTION
+===================================================== */
+.team-section {
+  background: #ffffff;
+}
+
+.section-title {
+  text-align: center;
+  font-size: 56px;
+  margin-bottom: 20px;
+}
+
+.section-desc {
+  max-width: 1000px;
+  margin: auto;
+  text-align: justify;
+  color: #666;
+}
+
+.team-gallery {
+  max-width: 1200px;
+  margin: 40px auto;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 24px;
+  padding: 0 20px;
+}
+
+.team-img {
+  height: 360px;
+  border-radius: 14px;
+  overflow: hidden;
+  box-shadow: 0 3px 12px rgba(0, 0, 0, .1);
+}
+
+.team-img img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+/* =====================================================
+   BLACK BORDER ONLY
+===================================================== */
+.rating-box,
+.feature-box,
+.result-card,
+.video-box,
+.gallery img,
+.team-img {
+  border: 2px solid #000;
+}
+
+/* =====================================================
+   SECTION GAP OVERRIDE
+===================================================== */
+main section {
+  padding-top: 50px;
+  padding-bottom: 50px;
+}
+
+.ratings {
+  padding-top: 30px;
+}
+
+.special-feature,
+.hair-transplant-info,
+.video-section {
+  padding-top: 60px;
+  padding-bottom: 40px;
+}
+
+.team-section {
+  padding-top: 90px;
+  padding-bottom: 40px;
+}
+
+.clinic-images {
+  padding-top: 35px;
+  padding-bottom: 35px;
+}
+
+/* =====================================================
+   MOBILE RESPONSIVE ONLY
+===================================================== */
+/* =====================================================
+   DESIGN UPGRADE OVERRIDES
+===================================================== */
+.home-page .hero {
+  min-height: 70vh;
+  height: auto;
+  padding: 72px 20px;
+  background-position: center;
+  isolation: isolate;
+}
+
+
+
+.hero-content {
+  width: min(980px, 100%);
+  margin: 0 auto;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.hero-badge {
+  display: inline-flex;
+  margin-bottom: 18px;
+  padding: 8px 16px;
+  border: 1px solid rgba(255, 255, 255, 0.24);
+  border-radius: 999px;
+  background: rgba(255, 255, 255, 0.14);
+  backdrop-filter: blur(8px);
+  color: #fff7dc;
+  font-size: 13px;
+  font-weight: 800;
+  letter-spacing: 0.4px;
+  text-transform: uppercase;
+}
+
+.home-page .hero h1 {
+  margin: 0;
+  font-size: clamp(40px, 6vw, 70px);
+  line-height: 1;
+  color: #fff;
+  text-shadow: 0 4px 14px rgba(0, 0, 0, 0.82), 0 16px 36px rgba(0, 0, 0, 0.42);
+}
+
+.home-page .hero h2 {
+  margin: 10px 0 0;
+  max-width: 860px;
+  color: #fff;
+  font-size: clamp(28px, 4.6vw, 56px);
+  line-height: 1.12;
+  font-weight: 900;
+  text-transform: uppercase;
+  text-shadow: 0 4px 14px rgba(0, 0, 0, 0.86), 0 16px 36px rgba(0, 0, 0, 0.45);
+}
+
+.home-page .hero p {
+  max-width: 680px;
+  margin-top: 18px;
+  color: rgba(255, 255, 255, 0.90);
+  font-size: clamp(16px, 1.6vw, 20px);
+  line-height: 1.65;
+}
+
+.hero-actions {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 14px;
+  margin-top: 28px;
+}
+
+.hero-btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 48px;
+  padding: 13px 24px;
+  border-radius: 999px;
+  text-decoration: none;
+  font-weight: 900;
+  transition: transform 0.22s ease, box-shadow 0.22s ease, background 0.22s ease;
+}
+
+.hero-btn:hover {
+  transform: translateY(-2px);
+}
+
+.hero-btn-primary {
+  background: linear-gradient(135deg, #14b8a6, #0f766e);
+  color: #fff;
+  box-shadow: 0 18px 34px rgba(15, 118, 110, 0.34);
+}
+
+.hero-btn-outline {
+  color: #fff;
+  border: 1px solid rgba(255, 255, 255, 0.46);
+  background: rgba(255, 255, 255, 0.12);
+  backdrop-filter: blur(10px);
+}
+
+.hero-btn-outline:hover {
+  background: rgba(255, 255, 255, 0.20);
+}
+
+.hero-trust {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 10px;
+  margin-top: 22px;
+}
+
+.hero-trust span {
+  padding: 8px 13px;
+  border-radius: 999px;
+  background: rgba(255, 255, 255, 0.13);
+  border: 1px solid rgba(255, 255, 255, 0.18);
+  color: rgba(255, 255, 255, 0.92);
+  font-size: 13px;
+  font-weight: 700;
+}
+
+.ratings {
+  margin-top: 4px;
+  position: relative;
+  z-index: 1;
+}
+
+.rating-box,
+.feature-box,
+.result-card,
+.video-box,
+.gallery img,
+.team-img {
+  border: 1px solid rgba(15, 118, 110, 0.14);
+  box-shadow: 0 18px 45px rgba(15, 118, 110, 0.10);
+}
+
+.rating-box,
+.feature-box {
+  border-radius: 18px;
+  background: linear-gradient(180deg, #ffffff, #f1fdfa);
+}
+
+.rating-box .score,
+.feature-box h3,
+.hair-transplant-info h2 span {
+  color: #0f766e;
+}
+
+.special-feature {
+  background: linear-gradient(180deg, #effdf8 0%, #ffffff 100%);
+}
+
+.special-feature h2,
+.hair-transplant-info h2,
+.clinic-images h2,
+.section-title {
+  color: #171717;
+  font-weight: 900;
+}
+
+.result-card,
+.video-box,
+.gallery img,
+.team-img {
+  border-radius: 18px;
+}
+
+.result-card img,
+.gallery img,
+.team-img img,
+.video-box img {
+  transition: transform 0.35s ease;
+}
+
+.result-card:hover img,
+.gallery img:hover,
+.team-img:hover img,
+.video-box:hover > img {
+  transform: scale(1.04);
+}
+
+.clinic-images {
+  height: auto;
+  background: #fff;
+}
+
+.clinic-images h2 {
+  margin-top: 0;
+  font-size: clamp(34px, 4.2vw, 52px);
+}
+
+.section-desc {
+  line-height: 1.9;
+}
+
+@media (max-width: 768px) {
+
+  .home-page .hero {
+    min-height: 64vh;
+    padding: 56px 18px;
+  }
+
+  .home-page .hero h1 {
+    font-size: 36px;
+  }
+
+  .home-page .hero h2 {
+    font-size: 28px;
+  }
+
+  .home-page .hero p {
+    font-size: 15px;
+  }
+
+  .hero-actions {
+    width: 100%;
+  }
+
+  .hero-btn {
+    width: min(100%, 320px);
+  }
+
+  .hero-trust {
+    gap: 8px;
+  }
+
+  .ratings {
+    margin-top: 22px;
+  }
+
+  .ratings,
+  .feature-grid,
+  .results-gallery,
+  .videos,
+  .gallery,
+  .team-gallery {
+    grid-template-columns: 1fr;
+  }
+
+  .special-feature h2,
+  .hair-transplant-info h2 {
+    font-size: 26px;
+  }
+
+  .clinic-images {
+    height: auto;
+  }
+
+  .clinic-images h2 {
+    font-size: 32px;
+    margin-top: 0;
+  }
+
+  .section-title {
+    font-size: 34px;
+  }
+
+  .section-desc {
+    padding: 0 14px;
+    font-size: 14px;
+  }
+
+  .team-img {
+    height: 300px;
+  }
+
+  main section {
+    padding-top: 40px;
+    padding-bottom: 40px;
+  }
+}

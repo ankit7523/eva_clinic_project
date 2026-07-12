@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>
+    <%= typeof title !=='undefined' ? title : 'Vaanya Clinic Blog' %>
+  </title>
+
+  <!-- Google Fonts -->
+  <!-- <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap" rel="stylesheet"> -->
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap" rel="stylesheet">
+
+  <!-- FONT AWESOME (MUST) -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
+  <!-- CSS -->
+  
+  <link rel="stylesheet" href="/css/header.css">
+  <link rel="stylesheet" href="/css/blog.css">
+  <link rel="stylesheet" href="/css/footer.css">
+  
+
+</head>
+
+<body>
+  <!-- ===== HEADER ===== -->
+  <%- include('partials/header') %>
+
+    <main>
+      <!-- LEFT MAIN ARTICLE -->
+      <article class="main-article">
+        <img src="/img/result9.png" alt="Hair Transplant Before and After">
+        <h2>Unlock Your Confidence: Discover the Art of Hair Restoration at EVA CLINIC, Lucknow's Premier Hair
+          Transplant Clinic</h2>
+        <p>
+          Welcome to EVA CLINIC, where we understand the significance of a full head of hair in defining your
+          confidence and self-image.
+          Located in the heart of Lucknow, EVA CLINIC offers cutting-edge solutions for hair loss and restoration
+          tailored to meet your unique needs.
+        </p>
+      </article>
+
+      <!-- RIGHT SIDE ARTICLES -->
+      <section class="side-articles">
+        <div class="side-article">
+          <img src="/img/blog2.png" alt="Hair Transplant Tips">
+          <div>
+            <h3>The Ultimate Guide to Hair Transplant Success: Tips and Insights</h3>
+            <p>Explore essential tips, insights, and success stories to navigate your hair transplant journey with
+              confidence and knowledge.</p>
+          </div>
+        </div>
+
+        <div class="side-article">
+          <img src="/img/blog3.png" alt="Hair Restoration Surgery">
+          <div>
+            <h3>Beyond Hair Restoration: Transforming Lives, One Follicle at a Time</h3>
+            <p>Discover the profound impact of hair transplant procedures on individuals' lives, from boosting
+              confidence to revitalizing self-esteem.</p>
+          </div>
+        </div>
+
+        <div class="side-article">
+          <img src="/img/5.1.jpg" alt="Hair Transplant Science">
+          <div>
+            <h3>Unveiling the Science of Hair Transplantation: Understanding Techniques and Innovations</h3>
+            <p>Delve into the science behind hair transplantation, exploring cutting-edge techniques and innovations
+              shaping the future of hair restoration.</p>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <!-- ===== FOOTER ===== -->
+    <%- include('partials/footer') %>
+</body>
+
+</html>
