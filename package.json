@@ -1,5 +1,5 @@
 {
-  "name": "vaanya_clinic_project",
+  "name": "eva_clinic_project",
   "version": "1.0.0",
   "description": "for Website for Vaanya Clinic — provides information about services, doctors, and appointments.",
   "main": "index.js",
@@ -8,7 +8,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/ankit7523/vaanya_clinic_project.git"
+    "url": "git+https://github.com/ankit7523/eva_clinic_project.git"
   },
   "keywords": [
     "keywords:",

@@ -17,7 +17,7 @@ app.set('views', path.join(__dirname, 'views'));
 
 /* -------------------- Default Title -------------------- */
 app.use((req, res, next) => {
-  res.locals.title = 'Vaanya Clinic – Best Hair Transplant in Lucknow';
+  res.locals.title = 'EVA CLINIC – Best Hair Transplant in Lucknow';
   next();
 });
 
@@ -29,17 +29,17 @@ function page(routePath, viewFile, title) {
 }
 
 /* -------------------- Static Page Routes -------------------- */
-page('/', 'index', 'Home – Vaanya Clinic');
-page('/about', 'about', 'About Us – Vaanya Clinic');
-page('/services', 'services', 'Services – Vaanya Clinic');
-page('/results', 'results', 'Results – Vaanya Clinic');
-page('/videos', 'videos', 'Videos – Vaanya Clinic');
-page('/blog', 'blog', 'Blog – Vaanya Clinic');
-page('/hair-transplant', 'hair-transplant', 'Hair Transplant – Vaanya Clinic');
+page('/', 'index', 'Home – EVA CLINIC');
+page('/about', 'about', 'About Us – EVA CLINIC');
+page('/services', 'services', 'Services – EVA CLINIC');
+page('/results', 'results', 'Results – EVA CLINIC');
+page('/videos', 'videos', 'Videos – EVA CLINIC');
+page('/blog', 'blog', 'Blog – EVA CLINIC');
+page('/hair-transplant', 'hair-transplant', 'Hair Transplant – EVA CLINIC');
 
 /* -------------------- Contact Page -------------------- */
 app.get('/contact', (req, res) => {
-  res.render('contact', { title: 'Contact Us – Vaanya Clinic' });
+  res.render('contact', { title: 'Contact Us – EVA CLINIC' });
 });
 
 /* -------------------- 404 Handler -------------------- */
@@ -47,7 +47,7 @@ app.use((req, res) => {
   if (req.accepts('html')) {
     return res
       .status(404)
-      .render('404', { title: 'Not Found – Vaanya Clinic' });
+      .render('404', { title: 'Not Found – EVA CLINIC' });
   }
   res.status(404).json({ ok: false, message: 'Not found' });
 });
